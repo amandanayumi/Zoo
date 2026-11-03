@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 class Animal(ABC):
     def __init__(self, nome):
         self.nome = nome
@@ -36,7 +35,6 @@ class Vaca(Animal):
 
     def mover(self):
         print(self.nome, "caminha")
-
 
 class Voador:
     def voar(self):
@@ -74,7 +72,6 @@ def fazer_som(animal):
 def fazer_movimento(animal):
     animal.mover()
 
-
 rex = Cachorro("Rex")
 mimi = Gato("Mimi")
 mimosa = Vaca("Mimosa")
@@ -91,3 +88,4 @@ fazer_som(donald)
 fazer_movimento(donald)
 fazer_som(jacare)
 fazer_movimento(jacare)
+
